@@ -9,9 +9,5 @@ jobs:
   include:
     - dist: jammy
       python: pypy
-    - dist: focal
-      python: pypy
     - dist: jammy
-      python: pypy3.9-7.3.9
-    - dist: focal
       python: pypy3.9-7.3.9
