@@ -1,0 +1,12 @@
+os: linux
+language: python
+python: pypy
+script: python -V
+
+install: true
+
+jobs:
+  include:
+    - dist: jammy
+    - dist: focal
+    - dist: xenial
