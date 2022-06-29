@@ -1,4 +1,4 @@
 os: linux
 language: python
 arch: arm64-graviton2
-script: python -V
+script: uname -a
