@@ -1,9 +1,6 @@
 
 os: linux
 language: node_js
-dist: xenial
-cache:
-  yarn: true
+dist: focal
 script:
-- yarn lint
-- yarn test-coverage
+  - npm list -g
