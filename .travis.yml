@@ -1,6 +1,14 @@
-
 os: linux
-language: node_js
-dist: focal
-script:
-  - npm list -g
+language: python
+script: python -V
+
+install: true
+
+jobs:
+  include:
+    - dist: jammy
+      python: pypy
+    - dist: jammy
+      python: pypy3
+    - dist: jammy
+      python: pypy3.9-7.3.9
