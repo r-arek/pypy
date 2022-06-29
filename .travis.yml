@@ -1,4 +1,9 @@
+
 os: linux
-language: python
-arch: arm64-graviton2
-script: uname -a
+language: node_js
+dist: xenial
+cache:
+  yarn: true
+script:
+- yarn lint
+- yarn test-coverage
